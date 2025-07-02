@@ -2,7 +2,7 @@
 
 This is a version 2 Proof of Concept of using Golang in a somewhat standard commercial program.
 After so many years, Golang have evolved a lot - so let's check how that changes the code.
-Here we have some REST web services with Authentication/Authorization using JWT, database connection with Postgres, a persistence layer that uses structs to abstract table models and Mustache to do query manipulation and some examples of sync/async calls.
+Here we have some REST web services with Authentication/Authorization using JWT, database connection with Postgres, a persistence layer that uses structs to abstract table models and some examples of sync/async calls.
 
 UPDATED THINGS:
     
