@@ -3,8 +3,6 @@ LABEL authors="elnerribeiro"
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y telnet
-
 COPY go.mod go.sum ./
 RUN go mod download
 
