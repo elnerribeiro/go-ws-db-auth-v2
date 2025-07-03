@@ -6,7 +6,7 @@ Here we have some REST web services with Authentication/Authorization using JWT,
 
 UPDATED THINGS:
     
-    1. Postgres running with docker compose
+    1. All running with docker compose
     2. Better logging, using zerolog - JSON format
     3. Using context for logging and DB connections
     4. Postgres connection done using pgx
@@ -14,15 +14,16 @@ UPDATED THINGS:
     6. Updated libraries, updated Go version
 
 
-Run database:
+Build and run (with docker):
+    
+    docker build -t gopoc .
+    docker compose up -d
 
-	docker compose up -d
-
-Stop database:
+Stop (with docker):
 
     docker compose down
 
-Build and run:
+Build and run (no docker):
 
 	(Linux)
 	go build -o main

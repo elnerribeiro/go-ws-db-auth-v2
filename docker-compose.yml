@@ -17,3 +17,15 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+    networks:
+      - inside_net
+  gopoc:
+    image: gopoc
+    ports:
+      - "8000:8000"
+    networks:
+      - inside_net
+
+networks:
+  inside_net:
+    name: inside_net
